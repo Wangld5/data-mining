@@ -1,5 +1,7 @@
 ### DATA-mining：Exercises for Monte Carlo Methods
 
+16340219  王亮岛
+
 #### Exercise1
 
 蒙特卡洛方法可以用于产生接近pi的近似值。图1显示了一个带有1/4内切圆在内的边长为1的正方形。正方形的面积是1，该1/4圆的面积为pi/4。通过编程实现在这个正方形中产生均匀分布的点。落在圈内（红点）的点和总的投在正方形（红和绿点）上的点的比率给出了pi/4的近似值。这一过程称为使用蒙特卡洛方法来仿真逼近pi实际值。令N表示总的投在正方形的点。当投点个数分别是20, 50, 100, 200, 300, 500, 1000, 5000时，pi值分别是多少？对于每个N，每次实验算出pi值，重复这个过程20次，并在表中记下均值和方差。
@@ -33,7 +35,7 @@ myPi = inCircle/n*4;
 
 多次选取点的个数不同，每次重复20次得出的均值和方差为：
 
-![1](D:\HW\数据挖掘\Q1\1.PNG)
+![1](D:\HW\数据挖掘\data-mining\mentoCarlo\Q1\1.PNG)
 
 其中，第一行数据为取点个数，第二场为每次取点重复试验20次后结果的均值，第三行为重复20次结果的方差。
 
@@ -41,11 +43,10 @@ myPi = inCircle/n*4;
 
 <table>
     <tr>
-        <td><center><img src="D:\HW\数据挖掘\Q1\2.PNG"></center></td>
-        <td><center><img src="D:\HW\数据挖掘\Q1\3.PNG"></center></td>
+        <td><center><img src="D:\HW\数据挖掘\data-mining\mentoCarlo\Q1\2.PNG"></center></td>
+        <td><center><img src="D:\HW\数据挖掘\data-mining\mentoCarlo\Q1\3.PNG"></center></td>
     </tr>
 </table>
-
 
 ##### 结果分析：
 
@@ -103,16 +104,17 @@ def loopMC(n):
 
 多次选点，每次重复100次得出的均值和方差为：
 
-![4](D:\HW\数据挖掘\Q2\4.PNG)
+![4](D:\HW\数据挖掘\data-mining\mentoCarlo\Q2\4.PNG)
 
 画出柱状图如下：
 
 <table>
     <tr>
-        <td><center><img src="D:\HW\数据挖掘\Q2\5.PNG"></center></td>
-        <td><center><img src="D:\HW\数据挖掘\Q2\6.PNG"></center></td>
+        <td><center><img src="D:\HW\数据挖掘\data-mining\mentoCarlo\Q2\5.PNG"></center></td>
+        <td><center><img src="D:\HW\数据挖掘\data-mining\mentoCarlo\Q2\6.PNG"></center></td>
     </tr>
 </table>
+
 
 ##### 结果分析
 
@@ -121,8 +123,6 @@ def loopMC(n):
 ####Exercise3
 
 我们现在尝试通过蒙特卡洛的方法求解如下的更复杂的积分：
-
- 
 
 ![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml\wps232E.tmp.jpg) 
 
@@ -163,13 +163,13 @@ def loopMC(n):
 
 多次选点，每次重复100次得出的均值和方差为：
 
-![7](D:\HW\数据挖掘\Q3\7.PNG)
+![7](D:\HW\数据挖掘\data-mining\mentoCarlo\Q3\7.PNG)
 
 画出柱状图如下：
 
-![8](D:\HW\数据挖掘\Q3\8.PNG)
+![8](D:\HW\数据挖掘\data-mining\mentoCarlo\Q3\8.PNG)
 
-![9](D:\HW\数据挖掘\Q3\9.PNG)
+![9](D:\HW\数据挖掘\data-mining\mentoCarlo\Q3\9.PNG)
 
 ##### 结果分析
 
